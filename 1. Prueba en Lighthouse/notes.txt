@@ -1,0 +1,2 @@
+PAra poder usar firebase desde el terminal fue necesario correr: Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+explicacion aqui: https://stackoverflow.com/questions/16460163/ps1-cannot-be-loaded-because-the-execution-of-scripts-is-disabled-on-this-syste
