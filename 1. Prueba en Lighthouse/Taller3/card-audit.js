@@ -7,10 +7,13 @@ const MAX_CARD_TIME = 2000;
 class LoadAudit extends Audit {
     static get meta() {
         return {
+            id: 'card-audit',
+            title: '',
             category: 'MyPerformance',
             name: 'card-audit',
             description: 'Schedule card initialized and ready',
             failureDescription: 'Schedule Card slow to initialize',
+            failureTitle: 'Schedule Card slow to initialize',
             helpText: 'Used to measure time from navigationStart to when the schedule' +
                 ' card is shown.',
 
