@@ -1,0 +1,18 @@
+{
+  "name": "3.-puppeteer",
+  "version": "1.0.0",
+  "description": "Punto 3 del taller 2",
+  "main": "test-puppeteer.js",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "jest": "^25.1.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

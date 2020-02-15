@@ -1,0 +1,5 @@
+Para ejecutar la prueba seguir los siguientes comandos
+
+cd '.\3. Puppeteer\'
+npm install
+npm test
