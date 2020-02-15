@@ -8,7 +8,7 @@ class LoadAudit extends Audit {
     static get meta() {
         return {
             id: 'card-audit',
-            title: '',
+            title: 'Tiempo de carga inicial',
             category: 'MyPerformance',
             name: 'card-audit',
             description: 'Schedule card initialized and ready',
@@ -28,7 +28,8 @@ class LoadAudit extends Audit {
 
         return {
             rawValue: loadedTime,
-            score: Number(belowThreshold)
+            score: Number(belowThreshold),
+            //numericValue: Number(belowThreshold)
         };
     }
 }

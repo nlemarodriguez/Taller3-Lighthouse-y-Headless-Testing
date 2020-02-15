@@ -188,9 +188,13 @@
      ****************************************************************************/
 
     function getProgramacionFromInternet(key) {
+        var inicio = Date.now();
         var url = 'https://api-ratp.pierre-grimaud.fr/v3/schedules/' + key;
         return fetch(url, { method: 'GET' })
             .then((response) => {
+                var fin = Date.now();
+                window.APILoadTime  = fin-inicio;
+                console.log("Tiempo de carga:",fin-inicio);
                 return response.json();
             })
             .catch(() => {
