@@ -1,4 +1,4 @@
 Tuve que instalar cypress con este comando: 
     npm install cypress --save-dev
 Luego correr las pruebas con: 
-    npm install cypress --save-dev
+    npx cypress run

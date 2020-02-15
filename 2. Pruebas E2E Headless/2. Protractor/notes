@@ -1,0 +1,11 @@
+Para ejecutar las pruebas correr los siguientes comandos:
+    npm install
+    ng e2e
+
+Para configurar el modo headless fue necesario abrir el archivo protractor.config.js y adicionar en capabilities las lineas:
+    capabilities: {
+    'browserName': 'chrome',
+    chromeOptions: {
+      args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+    }
+  },

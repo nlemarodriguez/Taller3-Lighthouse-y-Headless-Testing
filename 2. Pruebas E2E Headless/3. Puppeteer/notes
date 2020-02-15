@@ -1,5 +1,12 @@
 Para ejecutar la prueba seguir los siguientes comandos
 
+Levantar la aplicacion de angular register por el puerto 8080
+    en la ruta: C:\Users\Nicolas Lema\Desktop\Miso uniandes - no version\Pruebas automaticas\angular-6-registration-login-example ejecutar
+    npm install
+    npm start
+
 cd '.\3. Puppeteer\'
 npm install
 npm test
+
+para configurarlo en modo headless, abrir el archivo: jest-puppeteer.config.js y cambiar la bandera headless de false a true
