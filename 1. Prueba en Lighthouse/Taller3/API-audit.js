@@ -17,7 +17,8 @@ class LoadAudit extends Audit {
             helpText: 'Used to measure time from navigationStart to when the schedule' +
                 ' card is shown.',
 
-            requiredArtifacts: ['TimeToAPI']
+            requiredArtifacts: ['TimeToAPI'],
+
         };
     }
 
@@ -27,11 +28,11 @@ class LoadAudit extends Audit {
         const belowThreshold = loadedTime <= MAX_API_TIME;
 
         return {
-            numericValue: loadedTime,
+            rawValue: loadedTime,
                  
             score: Number(belowThreshold),
             
-            //numericValue: Number(belowThreshold) no funciono :(
+            //numericValue: loadedTime // no funciono :(
         };
     }
 }
